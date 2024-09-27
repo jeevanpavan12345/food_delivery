@@ -1,0 +1,287 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+</head>
+<style>
+    * {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    /* Theming */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+
+:root{
+    --white: #f9f9f9;
+    --black: #000000;
+    --gray: #85888C;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--white);
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.header{
+    background-color: var(--black);
+    box-shadow: 1px 1px 5px 0px var(--gray);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+/* Logo */
+.logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 10px;
+}
+/* Nav menu */
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--black);
+    overflow: hidden;
+
+}
+.menu a{
+    display: block;
+    padding: 30px;
+    color: var(--white);
+}
+.menu a:hover{
+    background-color: var(--gray);
+}
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+/* Menu Icon */
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+} /* Hide checkbox */
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+body:has(.side-menu:checked) {
+  overflow: hidden;
+}
+/* Responsiveness */
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+
+    }
+
+    .hamb{
+        display: none;
+    }
+}
+.signin {
+    position: relative;
+    content: "";
+    right: 350;
+    top: 10;
+    border: 2px solid black;
+}
+.container {
+    height: 400px;
+}
+@media screen and (max-width: 600px) {
+    .container {
+    height: 400px;
+}  
+}
+.container_text {
+    position: absolute;
+    content: "";
+    top: 200;
+    left: 450;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .container_text {
+    position: relative;
+    content: "";
+    top: 200;
+    left: 0;
+    width: 100%;
+}
+}
+
+.food {
+    width: 100%;
+    height: 500px;
+}
+@media screen and (max-width: 600px) {
+    .food {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    content: "";
+    top: 80;
+}
+}
+.grub_hub_heading{
+position: absolute;
+content: "";
+top: 600;
+left: 500;
+}
+@media screen and (max-width: 600px) {
+    .grub_hub_heading{
+position: absolute;
+content: "";
+top: 400;
+left: 20;
+}
+}
+.grub_hub_heading_content {
+    height: 200px;
+    margin: 40;
+    padding: 10px;
+    width: 300px;
+   float: left;
+   position: relative;
+   content: "";
+   top: 100;
+   left: 50;
+}
+@media screen and (max-width: 600px) {
+    .grub_hub_heading_content {
+    height: 200px;
+  position: relative;
+  content: "";
+  left: -20;
+  top: -10;
+  padding: 20px;
+}
+}
+.grub_hub_heading_content_text {
+    position: absolute;
+    content: "";
+    top: 900;
+    left: 200;
+    width: 300px;
+}
+@media screen and (max-width: 600px) {
+    .grub_hub_heading_content_text {
+    position: absolute;
+    content: "";
+    top: 680;
+    left: 50;
+    width: 300px;
+    font-size: small;
+}   
+}
+</style>
+<body>
+   <header class="header">
+    <a href="#" class="logo">LR</a>
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a> </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">SignIn</a></li>
+            <li><a href="#">Order In the App</a></li>
+        </ul>
+    </nav>
+</header>
+ <div class="container">
+    <img src="Images/food.jpg" alt="" class="food">
+<div class="container_text">
+<h1>Get Food Delivery and More</h1>
+</div>
+ </div>
+ <div class="grub_hub_heading">
+<h1>Why you'll love Grubhub</h1>
+ </div>
+<div class="grub_hub_heading_content">
+<img src="Images/burger_drink.jpg" alt="" style="width: 100%;" class="grub_hub_heading_content">
+</div>
+<div class="grub_hub_heading_content_text">
+    <h1>Something for everyone</h1>
+    <p>We've got every meal covered and more: snacks, alcohol, dessert, paper towels...</p>
+</div>
+<div class="grub_hub_heading_content">
+    <img src="Images/car.jpeg" alt="" style="width: 100%;" class="grub_hub_heading_content">
+    </div>
+    <div class="grub_hub_heading_content">
+        <img src="Images/tab.jpeg" alt="" style="width: 100%;" class="grub_hub_heading_content">
+        </div>
+        
+</body>
+</html>
