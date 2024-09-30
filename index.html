@@ -3,12 +3,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
     * {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    /* Theming */
+    * {
+        text-align: justify
+    }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
 
 :root{
@@ -41,14 +44,14 @@ ul{
     width: 100%;
     z-index: 1000;
 }
-/* Logo */
+
 .logo{
     display: inline-block;
     color: var(--white);
     font-size: 60px;
     margin-left: 10px;
 }
-/* Nav menu */
+
 .nav{
     width: 100%;
     height: 100%;
@@ -69,12 +72,12 @@ ul{
     max-height: 0;
     transition: max-height .5s ease-out;
 }
-/* Menu Icon */
+
 .hamb{
     cursor: pointer;
     float: right;
     padding: 40px 20px;
-}/* Style label tag */
+}
 
 .hamb-line {
     background: var(--white);
@@ -83,7 +86,7 @@ ul{
     position: relative;
     width: 24px;
 
-} /* Style span tag */
+} 
 
 .hamb-line::before,
 .hamb-line::after{
@@ -104,8 +107,8 @@ ul{
 
 .side-menu {
     display: none;
-} /* Hide checkbox */
-/* Toggle menu icon */
+} 
+
 .side-menu:checked ~ nav{
     max-height: 100%;
 }
@@ -124,7 +127,7 @@ ul{
 body:has(.side-menu:checked) {
   overflow: hidden;
 }
-/* Responsiveness */
+
 @media (min-width: 768px) {
     .nav{
         max-height: none;
@@ -167,7 +170,8 @@ body:has(.side-menu:checked) {
     content: "";
     top: 200;
     left: 450;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-size: small;
 }
 @media screen and (max-width: 600px) {
     .container_text {
@@ -181,7 +185,7 @@ body:has(.side-menu:checked) {
 
 .food {
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 @media screen and (max-width: 600px) {
     .food {
@@ -204,6 +208,7 @@ position: absolute;
 content: "";
 top: 400;
 left: 20;
+
 }
 }
 .grub_hub_heading_content {
@@ -244,10 +249,216 @@ left: 20;
     font-size: small;
 }   
 }
-</style>
+.grub_hub_heading_content_text_1 {
+    position: absolute;
+    content: "";
+    top: 900;
+    left: 570;
+    width: 300px;  
+}
+@media screen and (max-width: 600px) {
+    .grub_hub_heading_content_text_1 {
+    position: absolute;
+    content: "";
+    top: 960;
+    left: 50;
+    width: 300px;
+    font-size: small;
+}  
+}
+.grub_hub_heading_content_text_2 {
+    position: absolute;
+    content: "";
+    top: 900;
+    left: 950;
+    width: 300px;   
+}
+@media screen and (max-width: 600px) {
+    .grub_hub_heading_content_text_2 {
+    position: absolute;
+    content: "";
+    top: 1260;
+    left: 70;
+    width: 300px;
+    font-size: small;
+}  
+}
+.meals_enjoy {
+    width: 900px;
+    display: flex;
+    position: absolute;
+    content: "";
+    top: 1180;
+    height: 200px;
+    left: 140;
+}
+@media screen and (max-width: 600px) {
+    .meals_enjoy {
+    position: absolute;
+    content: "";
+    top: 1400;
+    height: 300px;
+    left: 40;
+    width: 300px;
+}  
+}
+@media screen and (max-width: 600px) {
+    .meals_enjoy_img {
+position: absolute;
+content: "";
+top: 160;
+}
+}
+.signup_customers {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    content: "";
+    top: 1400;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+}
+@media screen and (max-width: 800px) {
+    .signup_customers {
+    width: 100%;
+    position: absolute;
+    content: "";
+    top: 1880;
+}
+}
+@media screen and (max-width: 600px) {
+    .signup_customers_content {
+position: absolute;
+content: "";
+top: 120;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+padding: 5px;
+}
+}
+.about_grubhub_content {
+   
+   display: flex;
+    padding: 15px;
+    margin-right: 10;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+ .about_grubhub_content_1 {
+position: relative;
+top: 50;
+content: "";
+}
+.about_grubhub {
+    position: absolute;
+    content: "";
+    top: 1550;
+}
+@media screen and (max-width: 600px) {
+    .about_grubhub_content_1 {
+position: relative;
+content: "";
+width: 100%;
+top: 630;
+    }  
+}
+@media screen and (max-width: 600px) {
+   .about_grubhub_content {
+    position: relative;
+    content: "";
+    top: 590;
+    width: 100%;
+   } 
+}
+    .container12 {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        content: "";
+        top: 1750;
+        background-color: rgb(74, 26, 74);
+        height: 700px;
+        cursor: pointer;
+        color: white;
+    }
+    .container_12 {
+        margin: 100; 
+    }
+@media screen and (max-width: 600px) {
+    .container12 {
+        position: absolute;
+        content: "";
+        top: 2500;
+        height: 1400px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container_213 {
+        position: absolute;
+        content: "";
+        left: 100;
+        top: 300;
+    }
+} 
+@media screen and (max-width: 600px) {
+    .contain_90 {
+        position: absolute;
+        content: "";
+        left: 100;
+        top: 500;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container_87 {
+        position: absolute;
+        content: "";
+        left: 100;  
+        top: 700;
+    }
+}
+.food_delivery {
+    position: relative;
+    content: "";
+    top: 50;
+  width: 150%;
+
+}
+@media screen and (max-width: 600px) {
+    .food_delivery {
+    position: relative;
+    content: "";
+    top: 50;
+  width: 100%;
+  right: 10;
+  font-size: x-small;
+  top: 590;
+  
+}
+}
+.menu_1 {
+    position: absolute;
+    content: "";
+    top: 350;
+
+}
+@media screen and (max-width: 600px) {
+    .menu_1 {
+    position: absolute;
+    content: "";
+    top: 890;
+    cursor: pointer;
+
+}
+}
+.fa fa-shopping-cart {
+    position: relative;
+    content: "";
+    left: 30;
+}
+        </style>
 <body>
    <header class="header">
+  
     <a href="#" class="logo">LR</a>
+    <i class="fa fa-shopping-cart" style="font-size:28px;color:rgb(255, 255, 255) "></i>
     <input class="side-menu" type="checkbox" id="side-menu"/>
     <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
     <nav class="nav">
@@ -275,13 +486,113 @@ left: 20;
 <div class="grub_hub_heading_content_text">
     <h1>Something for everyone</h1>
     <p>We've got every meal covered and more: snacks, alcohol, dessert, paper towels...</p>
+    <div class="food_delivery">
+        <h1>Pickup or delivery from restaurants near you</h1>  
+    </div>
+   
 </div>
 <div class="grub_hub_heading_content">
     <img src="Images/car.jpeg" alt="" style="width: 100%;" class="grub_hub_heading_content">
     </div>
+    <div class="grub_hub_heading_content_text_1">
+        <h1>Delivery or pickup</h1>
+        <p>Sit back and relax, have us deliver to you or skip the line with pickup.</p>
+    </div>
     <div class="grub_hub_heading_content">
         <img src="Images/tab.jpeg" alt="" style="width: 100%;" class="grub_hub_heading_content">
         </div>
+        <div class="grub_hub_heading_content_text_2">
+            <h1>Save with Grubhub+</h1>
+            <p>Join Grubhub+ and get unlimited $0 delivery fees, exclusive offers, and more.</p>
+        </div>  
+     
+        <div class="meals_enjoy">   
+<p>Explore restaurants that deliver near you, or try yummy takeout fare. With a place for every taste, it’s easy to find food you crave, and order online or through the Grubhub app. Find great meals fast with lots of local menus. Enjoy eating the convenient way with places that deliver to your door.</p>
+<img src="Images/meals_enjoy.jpg" alt="" style="width: 100%;" class="meals_enjoy_img"> 
+</div>   
+  <div class="signup_customers">
+<h2>Restaurant Owners: Sign up with Grubhub to tap into millions of hungry customers</h2>
+<div class="signup_customers_content">
+    <p>Get more delivery and pickup orders from 31.5 million Grubhub customers hungry for new local restaurants. Sign up with Grubhub for Restaurants to access hassle-free technology and marketing tools that will help you grow your business. It's easy to get started and your first 30 days are free!</p>
+</div>
+  </div> 
+  <div class="about_grubhub">
+<div class="about_grubhub_content">
+<h1>About Grubhub</h1>
+</div>
+<div class="about_grubhub_content_1">
+    <p>Grubhub helps you find and order food from wherever you are. How it works: you type in an address, we tell you the restaurants that deliver to that locale as well as showing you droves of pickup restaurants near you. Want to be more specific? Search by cuisine, restaurant name or menu item. We'll filter your results accordingly. When you find what you're looking for, you can place your order online or by phone, free of charge. Oh, and we also give you access to reviews, coupons, special deals and a 24/7 customer care team that tracks each order and makes sure you get exactly what you want.</p>
+</div>
+  </div> 
+  <div class="container12">
+    <div class="container_12">
+        <h3 style="color: black;">Signup for special Offers</h3>
+      <form action="">
+        <label for="">EmailAddress</label> <br>
+        <input type="text" name="EmailAddress"> <br> <br>
+        <label for="">ZipCode</label> <br>
+        <input type="text" name="Zipcode"> <br> <br>
+        <input type="submit" value="Count me in!!">
+      </form>
+    </div> 
+    <div class="container_12">
+        <div class="container_213">
+            <h3 style="color: black;">Get to know us</h3>
+            <p>About Grubhub</p>
+            <p>Our apps</p>
+            <p>Our blog</p>
+            <p>Our tech blog, Grubhub Bytes</p>
+            <p>Careers</p>
+            <p>Investor relations</p>
+            <p>News</p>
+        </div>
         
+    </div>
+    <div class="container_12">
+        <div class="contain_90">
+            <h3 style="color: black;">Useful Links</h3>
+            <p>Gift cards</p>
+            <p>Grubhub+</p>
+            <p>Grubhub Guarantee</p>
+            <p>Grubhub Perks</p>
+            <p>Help</p>
+            <p>Catering</p>
+            <p>Student discounts</p>
+        </div>
+       
+    </div>
+    <div class="container_12">
+        <div class="container_87">
+            <h3 style="color: black;">Partner with us</h3>
+            <p style="border: 1px solid; border-radius: 10px; padding: 5px;">For Restaurants</p>
+            <p style="border: 1px solid; border-radius: 10px; padding: 5px;">For Drivers</p>
+            <p style="border: 1px solid; border-radius: 10px; padding: 5px;">For Corporate accounts</p>
+            <p style="border: 1px solid; border-radius: 10px; padding: 5px;">Become an Affliate</p>
+            <p style="border: 1px solid; border-radius: 10px; padding: 5px;">For campuses and hotels</p>
+        </div>
+        
+    </div>
+    <div class="menu_1">
+        <h3>Browse by cuisines</h3>
+        <br>
+        <p>Alcohol delivery</p>
+        <br>
+        <p>American Food delivery</p>
+        <br>
+        <p>Asian Food delivery</p>
+        <br>
+        <p>Breakfast delivery</p>
+        <br>
+        <p>Chicken delivery</p>
+        <br>
+        <p>Chinese Food delivery</p>
+        <br>
+        <p>Dessert delivery</p>
+        <br>
+        <p>Dinner delivery</p>
+        <br>
+    </div>
+ 
+    </div> 
 </body>
 </html>
