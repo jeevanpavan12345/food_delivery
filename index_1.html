@@ -25,7 +25,7 @@
     }
     .logo {
         display: inline-block;
-    color: var(--white);
+color: black;
     font-size: 60px;
     margin-left: 10px;
     text-decoration: none;
@@ -33,8 +33,7 @@
     }
     .container_1 {
         width: 100%;
-        border: 1px solid;
-        height: 282px;
+        height: 272px;
     }
     @media screen and (max-width: 600px) {
         .container_1 {
@@ -48,20 +47,126 @@
     }
     .container_1_text {
         position: absolute;
-        bottom: 500;
-        left: 540;
+        bottom: 400;
+        left: 470;
     }
-    @media screen and (max-width: 460px) {
+    @media screen and (max-width: 600px) {
         .container_1_text {
         position: absolute;
-        bottom: 450;
+        bottom: 490;
         left: 55;
     }  
     }
+    .container_3 {
+position: absolute;
+content: "";
+left: 60;
+top: 440;
+
+  }
+  .items_3 {
+    border: 1px solid;
+    height: 350px;
+    width: 280px;
+    float: left;
+    margin: 2;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 600px) {
+    .items_3 {
+    border: 1px solid;
+    height: 250px;
+    width: 148.5px;
+    float: left;
+    cursor: pointer;
+  }
+  .sandwich {
+    height: 100px;
+    cursor: pointer;
+  }
+  }
+  @media screen and (max-width: 600px) {
+    .container_3 {
+      width: 350px;
+      position: relative;
+      content: "";
+      left: 10;
+      bottom: 500;
+      top: 10;
+    }
+  }
+  .menu_2 {
+    position: relative;
+    content: "";
+    right: 100;
+  }
+  @media screen and (max-width: 600px) {
+    .menu_2 {
+    position: relative;
+    content: "";
+    right: 30;
+    cursor: pointer;
+  }
+  }
+  @media screen and (max-width: 600px) {
+    .feedback {
+    position: relative;
+    content: "";
+    bottom: 10;
+    font-size: small;
+  }
+  }
+.Liquor {
+  height: 140px;
+}
+@media screen and (max-width: 600px) {
+  .Liquor {
+  height: 100px;
+}
+}
+@media screen and (max-width: 600px) {
+  .feedback_1 {
+    position: relative;
+    content: "";
+    bottom: 10;
+font-size: small;
+}
+}
+@media screen and (max-width: 600px) {
+  .feedback_2 {
+position: relative;
+content: "";
+bottom: 20;
+font-size: small;
+}
+}
+@media screen and (max-width: 600px) {
+  .cheese_burger {
+  height: 100px;
+}
+}
+@media screen and (max-width: 600px) {
+  .wineshop {
+  height: 100px;
+}
+}
+
+.SignIn {
+  position: absolute;
+  content: "";
+  right: 30;
+  top: 30;
+  border: 1px solid;
+  color: blue;
+  cursor: pointer;
+}
 </style>
 <body>
     <div class="container">
         <a href="#" class="logo">LR</a>
+        <div class="SignIn">
+<button type="button">SignIn</button>
+        </div>
     </div>
     <div class="container_1">
 <img src="Images/bg_alchohol_delivery.jpg" alt="" style="width: 100%;" class="bg_alchohol">
@@ -69,5 +174,55 @@
     <div class="container_1_text">
 <h1>Alchohol near me</h1>
     </div>
+    <div class="container_3">
+        <div class="items_3">
+          <a href="index2.html"><img src="Images/sandwich.jpg" alt="" width="100%" class="sandwich"></a>
+          <center>
+            <h4>Galleria Market</h4>
+            <div class="menu_2">
+              <h5>Sandwich</h5>
+            </div>
+            <div class="feedback">
+              <p>William says: The sandwiches here are insanely good.</p>
+            </div>
+          </center>
+        </div>
+        <div class="items_3">
+         <img src="Images/Liquor.jpg" alt="" style="width: 100%;" class="Liquor">
+         <center>
+          <h4>Glenview Liquors</h4>
+          <div class="menu_2">
+            <h5>Alchohol</h5>
+          </div>
+          <div class="feedback_1">
+            <p>Liz says: Everything went well and very happy.</p>
+          </div>
+        </center>
+        </div>
+        <div class="items_3">
+          <img src="Images/cheese_burger.jpg" alt="" style="width: 100%;" class="cheese_burger">
+          <center>
+            <h4>The Goddess & Grocer</h4>
+            <div class="menu_2">
+              <h5>American</h5>
+            </div>
+            <div class="feedback_2">
+              <p>Joel says: I love their wraps and sandwiches! </p>
+            </div>
+          </center>
+        </div>
+        <div class="items_3">
+        <img src="Images/wineshop.jpg" alt="" style="width: 100%;" class="wineshop">
+        <center>
+          <h4>Lucca's Liquor and Wine Shop</h4>
+          <div class="menu_2">
+            <h5>American</h5>
+          </div>
+          <div class="feedback_2">
+            <p>Andy says: Amazing service, wow </p>
+          </div>
+        </center>
+        </div>
+      </div>
 </body>
 </html>

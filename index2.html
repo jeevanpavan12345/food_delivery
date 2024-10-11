@@ -1,0 +1,193 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galleria-market</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+     .container {
+        width: 100%;
+        border: 1px solid;
+        height: 70px;
+    }
+    .logo {
+        display: inline-block;
+   color: black;
+    font-size: 60px;
+    margin-left: 10px;
+    text-decoration: none;
+    }
+    @media screen and (max-width: 600px) {
+        .container {
+        width: 100%;
+        border: 1px solid;
+        height: 70px;
+    }
+    .logo {
+        display: inline-block;
+        color: black;
+    font-size: 60px;
+    margin-left: 10px;
+    text-decoration: none;
+    } 
+    }
+    .SignIn {
+  position: absolute;
+  content: "";
+  right: 30;
+  top: 30;
+  border: 1px solid;
+  color: blue;
+  cursor: pointer;
+}
+.bg_chicken {
+height: 380px;
+}
+@media screen and (max-width: 600px) {
+    .bg_chicken {
+height: 210px;
+}  
+}
+@media screen and (max-width: 600px) {
+    .bg_chicken_content {
+        font-size: small;
+    }
+}
+.check{
+    height: 40px;
+    position: absolute;
+    content: "";
+    left: 550;
+    width: 10%;
+    top: 662;
+    color: white;
+}
+.check1 {
+    height: 40px;
+    position: absolute;
+    content: "";
+    left: 710;
+    width: 10%;
+    top: 662;
+}
+@media screen and (max-width: 600px) {
+    .check{
+    height: 40px;
+    position: absolute;
+    content: "";
+    left: 10;
+    width: 39%;
+    top: 482;
+}
+}
+@media screen and (max-width: 600px) {
+    .check1 {
+    height: 40px;
+    position: absolute;
+    content: "";
+    left: 190;
+    width: 39%;
+    top: 482;
+}  
+}
+</style>
+<body>
+    <div class="container">
+        <a href="#" class="logo">LR</a>
+        <div class="SignIn">
+<button type="button">SignIn</button>
+        </div>
+    </div>
+    <div class="bg_chicken">
+<img src="Images/fried_chicken.jpg" alt="" style="width: 100%;" class="bg_chicken">
+    </div>
+    <div class="bg_chicken_content">
+        <p>Alcohol Store,
+            Alcohol,
+            Breakfast
+            •
+            $$$</p>
+    </div>
+<h1>Galleria Market</h1>
+<div class="galleria-market_ratings">
+
+</div>
+<p>4.9
+    •
+    810 ratings
+    •
+    340 W Superior St
+    •
+    (312) 337-9300
+    </p>
+    <div class="galleria-market_quality">
+    <p>94% Good food
+    93% On time delivery
+    94% Correct order</p>
+    </div>
+    <hr>
+    <center>
+        <div class="delivery_location">
+            <h4>See if this restaurant delivers to you.</h4>
+            <div class="container_9">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="check1" data-toggle="modal" data-target="#myModal" style="background-color: blue; color: white;" >Check</button>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+            <div class="container_9">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="check" data-toggle="modal" data-target="#myModal" style="background-color: blue;">Switch to Pickup</button>
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+              
+        </div>
+    </center>
+    <br> <br>
+    <hr>
+</body>
+</html>
