@@ -60,43 +60,25 @@ height: 210px;
     height: 40px;
     position: absolute;
     content: "";
-    left: 550;
+    left: 620;
     width: 10%;
     top: 662;
     color: white;
-}
-.check1 {
-    height: 40px;
-    position: absolute;
-    content: "";
-    left: 710;
-    width: 10%;
-    top: 662;
 }
 @media screen and (max-width: 600px) {
     .check{
     height: 40px;
     position: absolute;
     content: "";
-    left: 10;
+    left: 110;
     width: 39%;
     top: 482;
 }
-}
-@media screen and (max-width: 600px) {
-    .check1 {
-    height: 40px;
-    position: absolute;
-    content: "";
-    left: 190;
-    width: 39%;
-    top: 482;
-}  
 }
 </style>
 <body>
     <div class="container">
-        <a href="#" class="logo">LR</a>
+        <a href="index.html" class="logo">LR</a>
         <div class="SignIn">
 <button type="button">SignIn</button>
         </div>
@@ -113,9 +95,7 @@ height: 210px;
     </div>
 <h1>Galleria Market</h1>
 <div class="galleria-market_ratings">
-
-</div>
-<p>4.9
+  <p>4.9
     •
     810 ratings
     •
@@ -123,6 +103,8 @@ height: 210px;
     •
     (312) 337-9300
     </p>
+</div>
+
     <div class="galleria-market_quality">
     <p>94% Good food
     93% On time delivery
@@ -131,33 +113,8 @@ height: 210px;
     <hr>
     <center>
         <div class="delivery_location">
-            <h4>See if this restaurant delivers to you.</h4>
-            <div class="container_9">
-                <!-- Trigger the modal with a button -->
-                <button type="button" class="check1" data-toggle="modal" data-target="#myModal" style="background-color: blue; color: white;" >Check</button>
-              
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" role="dialog">
-                  <div class="modal-dialog">
-                  
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
-                      </div>
-                      <div class="modal-body">
-                        <p>Some text in the modal.</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-                
-              </div>
+            <h4>Pick Your Food Delivery Date</h4>
+           
             <div class="container_9">
                 <!-- Trigger the modal with a button -->
                 <button type="button" class="check" data-toggle="modal" data-target="#myModal" style="background-color: blue;">Switch to Pickup</button>
@@ -172,8 +129,12 @@ height: 210px;
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title">Modal Header</h4>
                       </div>
-                      <div class="modal-body">
-                        <p>Some text in the modal.</p>
+                      <div class="pickup_date">
+                        <form action="/action_page.php">
+                          <label for="date">Select Your PickUp Date:</label>
+                          <input type="date" id="birthday" name="birthday">
+                          <input type="submit">
+                        </form>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
